@@ -1,0 +1,17 @@
+.main-header {
+  background-color: $purple;
+  margin: 0 auto;
+  min-height: 636px;
+}
+
+@media (max-width: $desktop) {
+  .main-header {
+    min-height: 604px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .main-header {
+    min-height: 341px;
+  }
+}

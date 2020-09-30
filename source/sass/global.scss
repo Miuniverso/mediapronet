@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+
+  scroll-behavior: smooth;
+
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  font-family: $font-primary;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

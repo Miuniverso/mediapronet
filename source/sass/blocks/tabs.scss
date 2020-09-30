@@ -1,0 +1,75 @@
+.tabs {
+  list-style: none;
+
+  overflow-x: scroll;
+
+  display: flex;
+}
+
+.tabs__item-wrapper:not(:last-child) {
+  margin-right: 16px;
+}
+
+.tabs__item {
+  background: #E5E5E5;
+  border-radius: 28px;
+  padding: 14px;
+  white-space: nowrap;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+
+  cursor: pointer;
+
+  display: inline-block;
+  vertical-align: top;
+
+  // min-width: 149px;
+
+  &:hover {
+    padding: 13px;
+    border: 1px solid $yellow;
+  }
+}
+
+.tabs__item-wrapper .fullinfo-tab {
+  min-width: 211px;
+}
+
+.tabs__item-wrapper .tour-tab {
+  min-width: 149px;
+}
+
+.tabs__item-wrapper .layouts-tab {
+  min-width: 189px;
+}
+
+.tabs__item-wrapper .developer-tab {
+  min-width: 188px;
+}
+
+@media (max-width: $tablet) {
+  .tabs__item-wrapper:not(:last-child) {
+    margin-right: 9px;
+  }
+
+  .tabs__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 24px;
+
+    &:hover {
+      padding: 7px;
+    }
+  }
+
+  .tabs__item-wrapper .fullinfo-tab,
+  .tabs__item-wrapper .tour-tab,
+  .tabs__item-wrapper .layouts-tab,
+  .tabs__item-wrapper .developer-tab {
+    min-width: auto;
+  }
+}

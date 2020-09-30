@@ -1,13 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>ЖК HEADLINER</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo-link">
+            <img src="img/logo.svg" alt="логотип компании HEADLINER" class="main-nav__logo">
+          </a>
+          <button class="main-nav__btn visually-hidden" type="button" name="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Описание</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Локация</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Смотрите также</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Запись на просмотр</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <h1 class="intro__title">Многофункциональный жилой квартал HEADLINER</h1>
+        <p class="intro__subtitle">Сдача — 4 кв. 2022, есть сданные</p>
+        <div class="intro__slider-wrapper">
+          <div class="intro__slider">
+
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-1.webp 1x, img/intro-1@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
+
+
+              <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+              <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+              <img class="intro__img" src="img/intro-1.jpg" srcset="img/intro-1@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+            </picture>
+
+            <!-- <img src="img/intro-1.jpg" alt="жилой квартал HEADLINER" width="991" height="528"> -->
+          </div>
+          <ul class="intro__btns">
+            <li class="intro__btn intro__btn--active"></li>
+            <li class="intro__btn"></li>
+            <li class="intro__btn"></li>
+            <li class="intro__btn"></li>
+            <li class="intro__btn"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="info">
+    <h2 class="visually-hidden">Основная информация о жилом квартале HEADLINER</h2>
+    <div class="info__wrapper">
+      <input class="info__input" id="fullinfo" name="group" type="radio">
+      <input class="info__input" id="tour" name="group" type="radio">
+      <input class="info__input" id="layouts" name="group" type="radio">
+      <input class="info__input" id="developer" name="group" type="radio">
+
+      <ul class="info__tabs tabs" id="tabs">
+        <li class="tabs__item-wrapper">
+          <label class="tabs__item fullinfo-tab" for="fullinfo">Плюсы и минусы</label>
+        </li>
+        <li class="tabs__item-wrapper">
+          <label class="tabs__item tour-tab" for="tour">Аэротур</label>
+        </li>
+        <li class="tabs__item-wrapper">
+          <label class="tabs__item layouts-tab" for="layouts">Планировки</label>
+        </li>
+        <li class="tabs__item-wrapper">
+          <label class="tabs__item developer-tab" for="developer">Застройщик</label>
+        </li>
+      </ul>
+      <div class="info__panels panels">
+        <div class="panels__item fullinfo-panel" id="fullinfo-panel">
+          <ul class="panels__list-plus">
+            <li class="panels__elem">Привлекательная архитектура</li>
+            <li class="panels__elem">Большой выбор квартир</li>
+            <li class="panels__elem">Поразительные виды из окон</li>
+            <li class="panels__elem">Сложившийся район со всем необходимым</li>
+            <li class="panels__elem">Сравнительно низкие цены</li>
+          </ul>
+          <ul class="panels__list-minus">
+            <li class="panels__elem">Недостаток собственной инфраструктуры</li>
+            <li class="panels__elem">Частые пробки вокруг</li>
+            <li class="panels__elem">Не лучшая экология</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-air">
+    <div class="form-air__wrapper">
+      <p class="form-air__title">Запишитесь на просмотр и оцените всё сами!</p>
+      <button class="form-air__btn" type="button" name="button">Запись на просмотр</button>
+    </div>
+  </section>
+  <section class="location">
+    <h2 class="location__title">Локация</h2>
+    <address class="location__address-wrapper">
+      <p class="location__address">Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</p>
+      <ul class="location__subway-list">
+        <li class="location__subway-item">
+          <a href="#" class="location__subway-title">Шелепиха</a>
+          <span class="location__subway-way">5 мин пешком</span>
+        </li>
+        <li class="location__subway-item">
+          <a href="#" class="location__subway-title">Фили</a>
+          <span class="location__subway-way">6 мин на транспорте</span>
+        </li>
+      </ul>
+    </address>
+  </section>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
