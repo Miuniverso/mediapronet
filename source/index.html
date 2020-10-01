@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="многофункциональный жилой квартал HEADLINER">
   <title>ЖК HEADLINER</title>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="main-header">
@@ -13,7 +19,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo-link">
-            <img src="img/logo.svg" alt="логотип компании HEADLINER" class="main-nav__logo">
+            <img src="img/logo.svg" alt="логотип компании HEADLINER" class="main-nav__logo" width="64" height="64">
           </a>
           <button class="main-nav__btn visually-hidden" type="button" name="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -66,7 +72,7 @@
 
       <ul class="info__tabs tabs" id="tabs">
         <li class="tabs__item-wrapper">
-          <label class="tabs__item fullinfo-tab" for="fullinfo">Плюсы и минусы</label>
+          <label class="tabs__item fullinfo-tab tabs__item--active" for="fullinfo">Плюсы и минусы</label>
         </li>
         <li class="tabs__item-wrapper">
           <label class="tabs__item tour-tab" for="tour">Аэротур</label>
@@ -103,21 +109,147 @@
     </div>
   </section>
   <section class="location">
-    <h2 class="location__title">Локация</h2>
-    <address class="location__address-wrapper">
-      <p class="location__address">Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</p>
-      <ul class="location__subway-list">
-        <li class="location__subway-item">
-          <a href="#" class="location__subway-title">Шелепиха</a>
-          <span class="location__subway-way">5 мин пешком</span>
+    <div class="location__wrapper">
+      <h2 class="location__title">Локация</h2>
+      <address class="location__address-wrapper">
+        <p class="location__address">Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39</p>
+        <ul class="location__subway-list">
+          <li class="location__subway-item">
+            <a href="#" class="location__subway-title">Шелепиха</a>
+            <span class="location__subway-way">5 мин пешком</span>
+          </li>
+          <li class="location__subway-item">
+            <a href="#" class="location__subway-title">Фили</a>
+            <span class="location__subway-way">6 мин на транспорте</span>
+          </li>
+        </ul>
+      </address>
+      <div class="location__map-wrapper">
+        <div id="map" class="location__map"></div>
+        <button class="location__btn" type="button" name="button"><span>Объекты инфраструктуры</span></button>
+        <div class="location__map__list">
+          <input class="location__checkbox" type="checkbox" id="school" checked>
+          <label for="school">Школы</label>
+          <input class="location__checkbox" type="checkbox" id="pharmacy" checked>
+          <label for="pharmacy">Аптеки</label>
+          <input class="location__checkbox" type="checkbox" id="college">
+          <label for="college">Высшие учебные заведения</label>
+          <input class="location__checkbox" type="checkbox" id="hospitals">
+          <label for="hospitals">Больницы</label>
+          <input class="location__checkbox" type="checkbox" id="malls" checked>
+          <label for="malls">Магазины</label>
+          <input class="location__checkbox" type="checkbox" id="fitness" checked>
+          <label for="fitness">Фитнес</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="offer__wrapper">
+      <h2 class="offer__title">Смотрите также</h2>
+      <ul class="offer__list">
+        <li class="offer__item">
+          <div class="offer__item-wrapper">
+            <a class="offer__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/hc-level.webp 1x, img/hc-level@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-level-tablet@1x.webp 1x, img/hc-level-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/hc-level-mobile@1x.webp 1x, img/hc-level-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-level-tablet.jpg 1x, img/hc-level-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/hc-level-mobile.jpg 1x, img/hc-level-mobile@2x.jpg 2x">
+                <img class="offer__img" src="img/hc-level.jpg" src="img/hc-level@2x.jpg 2x" width="261" height="180" alt="ЖК «Level Стрешнево» (Левел Стрешнево)">
+              </picture>
+              <span class="offer__price">8 217 030 - 29 070 951₽</span>
+              <span class="offer__count">569 квартир в продаже</span>
+            </a>
+          </div>
+
+          <p class="offer__name">ЖК «Level Стрешнево» (Левел Стрешнево)</p>
+          <p class="offer__city">Москва, СВАО</p>
+          <p class="offer__subway-wrapper">
+            <span class="offer__subway">Алексеевская</span>
+            <span class="offer__subway-way">5 мин</span>
+          </p>
         </li>
-        <li class="location__subway-item">
-          <a href="#" class="location__subway-title">Фили</a>
-          <span class="location__subway-way">6 мин на транспорте</span>
+        <li class="offer__item">
+          <div class="offer__item-wrapper">
+            <a class="offer__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/hc-medvedkovo.webp 1x, img/hc-medvedkovo@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-medvedkovo-tablet@1x.webp 1x, img/hc-medvedkovo-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/hc-medvedkovo-mobile@1x.webp 1x, img/hc-medvedkovo-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-medvedkovo-tablet.jpg 1x, img/hc-medvedkovo-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/hc-medvedkovo-mobile.jpg 1x, img/hc-medvedkovo-mobile@2x.jpg 2x">
+                <img class="offer__img" src="img/hc-m/hc-medvedkovo.jpg" src="img/hc-medvedkovo@2x.jpg 2x" width="261" height="180" alt="ЖК «Новое Медведково»">
+              </picture>
+              <span class="offer__price">8 217 030 - 29 070 951₽</span>
+              <span class="offer__count">569 квартир в продаже</span>
+            </a>
+          </div>
+          <p class="offer__name">ЖК «Новое Медведково»</p>
+          <p class="offer__city">Москва, СВАО</p>
+          <p class="offer__subway-wrapper">
+            <span class="offer__subway">Алексеевская</span>
+            <span class="offer__subway-way">5 мин</span>
+          </p>
+        </li>
+        <li class="offer__item">
+          <div class="offer__item-wrapper">
+            <a class="offer__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/hc-luberetskiy.webp 1x, img/hc-luberetskiy@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-luberetskiy-tablet@1x.webp 1x, img/hc-luberetskiy-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/hc-luberetskiy-mobile@1x.webp 1x, img/hc-luberetskiy-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-luberetskiy-tablet.jpg 1x, img/hc-luberetskiy-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/hc-luberetskiy-mobile.jpg 1x, img/hc-luberetskiy-mobile@2x.jpg 2x">
+                <img class="offer__img" src="img/hc-m/hc-luberetskiy.jpg" src="img/hc-luberetskiy@2x.jpg 2x" width="261" height="180" alt="ЖК «Люберецкий»">
+              </picture>
+              <span class="offer__price">8 217 030 - 29 070 951₽</span>
+              <span class="offer__count">569 квартир в продаже</span>
+            </a>
+          </div>
+          <p class="offer__name">ЖК «Люберецкий»</p>
+          <p class="offer__city">Москва, СВАО</p>
+          <p class="offer__subway-wrapper">
+            <span class="offer__subway">Алексеевская</span>
+            <span class="offer__subway-way">5 мин</span>
+          </p>
+        </li>
+        <li class="offer__item">
+          <div class="offer__item-wrapper">
+            <a class="offer__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/hc-forest.webp 1x, img/hc-forest@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-forest-tablet@1x.webp 1x, img/hc-forest-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/hc-forest-mobile@1x.webp 1x, img/hc-forest-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/hc-forest-tablet.jpg 1x, img/hc-forest-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/hc-forest-mobile.jpg 1x, img/hc-forest-mobile@2x.jpg 2x">
+                <img class="offer__img" src="img/hc-m/hc-forest.jpg" src="img/hc-forest@2x.jpg 2x" width="261" height="180" alt="ЖК «Измайловский лес»">
+              </picture>
+              <span class="offer__price">8 217 030 - 29 070 951₽</span>
+              <span class="offer__count">569 квартир в продаже</span>
+            </a>
+          </div>
+          <p class="offer__name">ЖК «Измайловский лес»</p>
+          <p class="offer__city">Москва, СВАО</p>
+          <p class="offer__subway-wrapper">
+            <span class="offer__subway">Алексеевская</span>
+            <span class="offer__subway-way">5 мин</span>
+          </p>
         </li>
       </ul>
-    </address>
+    </div>
   </section>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ceb09942-1d20-47e7-a43f-2948b70b9d3d&lang=ru_RU" type="text/javascript"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 </html>

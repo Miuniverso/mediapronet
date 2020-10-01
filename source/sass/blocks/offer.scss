@@ -1,0 +1,159 @@
+.offer {
+  padding-top: 41px;
+}
+
+.offer__wrapper {
+  max-width: 1144px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.offer__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+
+  margin: 0;
+}
+
+.offer__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+
+.offer__item {
+  max-width: 261px;
+  width: 25%;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.offer__item-wrapper {
+  max-width: 261px;
+  height: 180px;
+
+  overflow: hidden;
+}
+
+.offer__img {
+  transition: all 1s ease-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+ }
+
+.offer__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  max-height: 180px;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.69%, rgba(0, 0, 0, 0.46) 79.98%);
+}
+
+.offer__price {
+  position: absolute;
+  top: 71%;
+  left: 6%;
+
+  display: block;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $white;
+}
+
+.offer__count {
+  position: absolute;
+  top: 82%;
+  left: 6%;
+
+  display: block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $white;
+}
+
+.offer__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: $black;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.offer__city {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin: 0;
+  margin-top: 4px;
+}
+
+.offer__subway-wrapper {
+  margin: 0;
+}
+
+.offer__subway,
+.offer__subway-way {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  position: relative;
+}
+
+.offer__subway {
+  margin-left: 18px;
+
+  &::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  background: #FCA82A;
+  border-radius: 50%;
+  }
+}
+
+.offer__subway-way {
+  margin-left: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: -13px;
+    transform: translateY(-50%);
+
+    background-image: url("../../img/man.svg");
+    background-repeat: no-repeat;
+  }
+}

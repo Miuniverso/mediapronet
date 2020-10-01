@@ -31,3 +31,13 @@ navButton.addEventListener("click", function(evt) {
   menu.classList.toggle("visually-hidden");
   navButton.classList.toggle("main-nav__btn--active");
 });
+
+
+// open map nav
+
+var mapBtn = document.querySelector(".location__btn");
+
+mapBtn.addEventListener("click", function() {
+  mapBtn.classList.toggle("location__btn--active");
+  document.querySelector(".location__map__list").classList.toggle("location__map__list--open");
+})
