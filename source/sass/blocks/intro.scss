@@ -69,6 +69,7 @@
   cursor: pointer;
   transition: .3s;
   border-radius: 0;
+  outline: none;
 
   &:not(:last-child) {
     margin-right: 24px;

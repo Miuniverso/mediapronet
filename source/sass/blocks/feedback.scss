@@ -62,7 +62,7 @@
 
 @media (max-width: $desktop) {
   .feedback {
-    padding-bottom: 47px;
+    padding-bottom: 49px;
     min-height: 440px;
   }
 
@@ -92,9 +92,14 @@
 }
 
 @media (max-width: $tablet) {
+  .feedback {
+    padding-bottom: 32px;
+  }
+
   .feedback__title {
     font-size: 20px;
     line-height: 28px;
+    padding-top: 31px;
   }
 
   .feedback__form {

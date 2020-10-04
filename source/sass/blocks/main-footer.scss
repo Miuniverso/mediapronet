@@ -2,6 +2,7 @@
   max-width: 1144px;
   padding: 0 20px;
   padding-top: 32px;
+  padding-bottom: 25px;
   margin: 0 auto;
 
   display: flex;
@@ -65,6 +66,8 @@
 @media (max-width: $desktop) {
   .main-footer__wrapper {
     max-width: 97%;
+    padding-bottom: 6px;
+    padding-top: 33px;
   }
 
   .main-footer__item {
@@ -77,5 +80,14 @@
   .main-footer__item {
     width: 100%;
     position: relative;
+    margin-bottom: 15px;
+  }
+
+  .main-footer__item h3 {
+    padding: 0;
+  }
+
+  .main-footer__list {
+    padding-top: 15px;
   }
 }

@@ -66,6 +66,10 @@
     background-color: #71CFEC;
     border-radius: 50%;
   }
+
+  &:hover {
+    border-bottom: none;
+  }
 }
 
 .location__subway-way {
@@ -176,6 +180,8 @@
   cursor: pointer;
   z-index: 2;
 
+  // transition: .3s;
+
   &::before {
     content: "";
     position: absolute;
@@ -185,9 +191,12 @@
     height: 24px;
     top: 19%;
     left: 9%;
+
+    transition: .3s;
   }
 
   &--active::before {
+    transition: .3s;
     transform: rotate(0deg);
   }
 }
@@ -265,6 +274,7 @@
   .location__btn {
     min-width: 72px;
     height: 32px;
+    bottom: 9px;
 
     &::before {
       left: 34%;
