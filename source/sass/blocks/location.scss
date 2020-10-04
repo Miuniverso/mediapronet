@@ -128,10 +128,6 @@
   color: $white;
 }
 
-// .location__map__list .open {
-//   display: block;
-// }
-
 .location__map__list input:checked,
 .location__map__list input:not(:checked) {
   opacity: 0;
@@ -150,7 +146,7 @@
 }
 
 .location__checkbox:checked+label::before {
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

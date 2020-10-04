@@ -120,19 +120,19 @@
   &--rocket {
     left: 8px;
     background-color: #774AA3;
-    background-image: url("../../img/rocket.svg");
+    background-image: url("../img/rocket.svg");
   }
 
   &--crown {
     left: 28px;
     background-color: #EE4713;
-    background-image: url("../../img/crown.svg");
+    background-image: url("../img/crown.svg");
   }
 
   &--discount {
     left: 8px;
     background-color: #FC822A;
-    background-image: url("../../img/discount.svg");
+    background-image: url("../img/discount.svg");
 
     &:hover + .offer__mark-desc {
       display: inline-block;
@@ -236,7 +236,7 @@
     left: -13px;
     transform: translateY(-50%);
 
-    background-image: url("../../img/man.svg");
+    background-image: url("../img/man.svg");
     background-repeat: no-repeat;
   }
 }
@@ -258,7 +258,6 @@
 
   .offer__list {
     flex-wrap: wrap;
-    // justify-content: space-between;
     justify-content: center;
   }
 
@@ -325,7 +324,6 @@
   }
 
   .offer__item {
-    // max-width: 272px;
     width: 100%;
     height: auto;
 

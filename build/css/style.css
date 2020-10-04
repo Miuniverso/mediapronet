@@ -522,7 +522,7 @@ body {
     background-repeat: no-repeat;
     background-image: url("../img/burger.svg"); }
     .main-nav__btn--active {
-      background-image: url("../../img/close.svg");
+      background-image: url("../img/close.svg");
       background-color: #F0C630; }
   .main-nav__logo-link img {
     width: 32px;
@@ -1047,7 +1047,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .location__checkbox:checked + label::before {
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -1250,15 +1250,15 @@ body {
   .offer__mark--rocket {
     left: 8px;
     background-color: #774AA3;
-    background-image: url("../../img/rocket.svg"); }
+    background-image: url("../img/rocket.svg"); }
   .offer__mark--crown {
     left: 28px;
     background-color: #EE4713;
-    background-image: url("../../img/crown.svg"); }
+    background-image: url("../img/crown.svg"); }
   .offer__mark--discount {
     left: 8px;
     background-color: #FC822A;
-    background-image: url("../../img/discount.svg"); }
+    background-image: url("../img/discount.svg"); }
     .offer__mark--discount:hover + .offer__mark-desc {
       display: inline-block;
       vertical-align: top; }
@@ -1340,7 +1340,7 @@ body {
     left: -13px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background-image: url("../../img/man.svg");
+    background-image: url("../img/man.svg");
     background-repeat: no-repeat; }
 
 @media (max-width: 1023px) {
@@ -1587,7 +1587,7 @@ body {
   .select-wrapper::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/arrow-select.svg");
+    background-image: url("../img/arrow-select.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 8px;
@@ -1799,7 +1799,7 @@ body {
     position: absolute;
     width: 14px;
     height: 7px;
-    background-image: url("../../img/arrow-down.svg");
+    background-image: url("../img/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center;
     right: 0;

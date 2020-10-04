@@ -108,12 +108,7 @@ var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 2000,
   },
-  // Optional parameters
-  // direction: 'vertical',
-  // centeredSlides: true,
   loop: true,
-  // spaceBetween: 0,
-  // slidesPerView: 1,
 
   pagination: {
     el: '.intro__btns',
@@ -125,18 +120,3 @@ var mySwiper = new Swiper('.swiper-container', {
 },
 
 })
-
-
-// var mySlider =  new Swiper(".swiper-container", {
-//   loop: !0,
-//   autoplay: !0,
-//   simulateTouch: !1,
-//   pagination: {
-//       el: ".intro__btns",
-//       clickable: !0,
-//       renderBullet: function (e, t) {
-//           return '<span class="dots__item swiper-pagination-bullet"></span>';
-//       },
-//       bulletActiveClass: "active",
-//   },
-// })
