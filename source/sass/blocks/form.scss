@@ -1,0 +1,221 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  border-bottom: 1px solid $yellow;
+  color: $white;
+
+  margin-bottom: 15px;
+  padding: 16px 0;
+
+  &[placeholder] {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &::-moz-placeholder {
+    color: $white;
+  } /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: $white;
+  } /* Firefox 18- */
+
+  &:-ms-input-placeholder{
+    color: $white;
+  }
+
+  &:disabled[placeholder] {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  } /* Firefox 19+ */
+  &:disabled:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  } /* Firefox 18- */
+
+  &:disabled:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:invalid {
+    border-bottom: 1px solid #EE4713;
+  }
+}
+
+.form__lists {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.select-wrapper {
+  width: 48%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 5px;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+  }
+}
+
+.form select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $yellow;
+  appearance: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $white;
+
+  width: 100%;
+  padding: 16px 0;
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.form option {
+  background-color: $white;
+}
+
+.form__check {
+  position: relative;
+  margin-top: 7px;
+}
+
+.form__check input:checked,
+.form__check input:not(:checked) {
+    opacity: 0;
+  }
+
+.form__check input:checked+label::after,
+.form__check input:not(:checked)+label::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C4C4C4;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.form__check input:checked+label::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 10px;
+  top: 5px;
+  left: 1px;
+  background-image: url("../img/check-main.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form__check label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $white;
+
+  padding-left: 8px;
+}
+
+.form__btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: $purple;
+  background-color: $white;
+  padding: 14px 36px;
+  margin-top: 14px;
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  align-self: flex-start;
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+
+
+@media (max-width: $tablet) {
+  .form input {
+    margin-bottom: 7px;
+  }
+
+  .form__lists {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .select-wrapper {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+
+  .form__check {
+    display: flex;
+    align-items: baseline;
+    margin-top: 17px;
+  }
+
+  .form__check label {
+    padding-left: 17px;
+    line-height: 24px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+    line-height: 24px;
+
+    align-self: auto;
+    margin-top: 23px;
+    padding: 8px;
+  }
+}

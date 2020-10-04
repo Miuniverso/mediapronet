@@ -34,11 +34,11 @@
     border: 1px solid $yellow;
   }
 
-  &--active {
-    background-color: $white;
-    border: 1px solid #C4C4C4;
-    padding: 13px;
-  }
+  // &--active {
+  //   background-color: $white;
+  //   border: 1px solid #C4C4C4;
+  //   padding: 13px;
+  // }
 }
 
 .tabs__item-wrapper .fullinfo-tab {
@@ -57,6 +57,23 @@
   min-width: 188px;
 }
 
+#fullinfo:checked ~ .info__panels .fullinfo-panel,
+#tour:checked ~ .info__panels .tour-panel,
+#layouts:checked ~ .info__panels .layouts-panel,
+#developer:checked ~ .info__panels .developer-panel {
+  display: flex;
+}
+
+#fullinfo:checked ~ .tabs .fullinfo-tab,
+#tour:checked ~ .tabs .tour-tab,
+#layouts:checked ~ .tabs .layouts-tab,
+#developer:checked ~ .tabs .developer-tab {
+
+  background-color: $white;
+  border: 1px solid #C4C4C4;
+  padding: 13px;
+}
+
 @media (max-width: $tablet) {
   .tabs__item-wrapper:not(:last-child) {
     margin-right: 9px;
@@ -71,9 +88,17 @@
       padding: 7px 23px;
     }
 
-    &--active {
-      padding: 7px 23px;
-    }
+    // &--active {
+    //   padding: 7px 23px;
+    // }
+  }
+
+  #fullinfo:checked ~ .tabs .fullinfo-tab,
+  #tour:checked ~ .tabs .tour-tab,
+  #layouts:checked ~ .tabs .layouts-tab,
+  #developer:checked ~ .tabs .developer-tab {
+
+    padding: 7px 23px;
   }
 
   .tabs__item-wrapper .fullinfo-tab,

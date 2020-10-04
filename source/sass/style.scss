@@ -1,3 +1,4 @@
+@import "./normalize";
 @import "./typography.scss";
 @import "./variables.scss";
 @import "./global.scss";
@@ -10,3 +11,7 @@
 @import "./blocks/form-air.scss";
 @import "./blocks/location.scss";
 @import "./blocks/offer.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/dropdown.scss";

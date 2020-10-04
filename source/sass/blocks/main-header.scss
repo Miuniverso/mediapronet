@@ -2,6 +2,20 @@
   background-color: $purple;
   margin: 0 auto;
   min-height: 636px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 79px;
+    opacity: 0.3;
+    background-color: $white;
+
+    z-index: 3;
+  }
 }
 
 @media (max-width: $desktop) {
@@ -13,5 +27,9 @@
 @media (max-width: $tablet) {
   .main-header {
     min-height: 341px;
+
+    &::before {
+      top: 47px;
+    }
   }
 }

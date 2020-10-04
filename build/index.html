@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -35,44 +36,107 @@
       <div class="intro">
         <h1 class="intro__title">Многофункциональный жилой квартал HEADLINER</h1>
         <p class="intro__subtitle">Сдача — 4 кв. 2022, есть сданные</p>
-        <div class="intro__slider-wrapper">
-          <div class="intro__slider">
+        <div class="intro__slider-wrapper swiper-container">
+          <div class="intro__swiper swiper-wrapper">
+            <div class="intro__slider swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-1.webp 1x, img/intro-1@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
 
-            <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-1.webp 1x, img/intro-1@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+                <img class="intro__img" src="img/intro-1.jpg" srcset="img/intro-1@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+              </picture>
+            </div>
+
+            <div class="intro__slider swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-2.webp 1x, img/intro-2@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
 
 
-              <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
-              <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
-              <img class="intro__img" src="img/intro-1.jpg" srcset="img/intro-1@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
-            </picture>
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+                <img class="intro__img" src="img/intro-2.jpg" srcset="img/intro-2@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+              </picture>
+            </div>
 
-            <!-- <img src="img/intro-1.jpg" alt="жилой квартал HEADLINER" width="991" height="528"> -->
+            <div class="intro__slider swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-1.webp 1x, img/intro-1@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+                <img class="intro__img" src="img/intro-1.jpg" srcset="img/intro-1@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+              </picture>
+            </div>
+
+            <div class="intro__slider swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-2.webp 1x, img/intro-2@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+                <img class="intro__img" src="img/intro-2.jpg" srcset="img/intro-2@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+              </picture>
+            </div>
+
+            <div class="intro__slider swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-1.webp 1x, img/intro-1@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet@1x.webp 1x, img/intro-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/intro-1-mobile@1x.webp 1x, img/intro-1-mobile@2x.webp 2x">
+
+
+                <source media="(max-width: 1023px) and (min-width: 768px)" srcset="img/intro-1-tablet.jpg 1x, img/intro-1-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/intro-1-mobile.jpg 1x, img/intro-1-mobile@2x.jpg 2x">
+                <img class="intro__img" src="img/intro-1.jpg" srcset="img/intro-1@2x.jpg 2x" alt="жилой квартал HEADLINER" width="991" height="528">
+              </picture>
+            </div>
+
+
           </div>
-          <ul class="intro__btns">
+
+          <!-- <ul class="intro__btns swiper-pagination">
             <li class="intro__btn intro__btn--active"></li>
             <li class="intro__btn"></li>
             <li class="intro__btn"></li>
             <li class="intro__btn"></li>
             <li class="intro__btn"></li>
-          </ul>
+          </ul> -->
+
         </div>
+
+        <ul class="intro__btns swiper-pagination">
+          <li class="intro__btn intro__btn--active"></li>
+          <li class="intro__btn"></li>
+          <li class="intro__btn"></li>
+          <li class="intro__btn"></li>
+          <li class="intro__btn"></li>
+        </ul>
       </div>
     </div>
   </header>
   <section class="info">
     <h2 class="visually-hidden">Основная информация о жилом квартале HEADLINER</h2>
     <div class="info__wrapper">
-      <input class="info__input" id="fullinfo" name="group" type="radio">
+      <input class="info__input" id="fullinfo" name="group" type="radio" checked="">
       <input class="info__input" id="tour" name="group" type="radio">
       <input class="info__input" id="layouts" name="group" type="radio">
       <input class="info__input" id="developer" name="group" type="radio">
 
       <ul class="info__tabs tabs" id="tabs">
         <li class="tabs__item-wrapper">
-          <label class="tabs__item fullinfo-tab tabs__item--active" for="fullinfo">Плюсы и минусы</label>
+          <label class="tabs__item fullinfo-tab" for="fullinfo">Плюсы и минусы</label>
         </li>
         <li class="tabs__item-wrapper">
           <label class="tabs__item tour-tab" for="tour">Аэротур</label>
@@ -84,7 +148,9 @@
           <label class="tabs__item developer-tab" for="developer">Застройщик</label>
         </li>
       </ul>
+
       <div class="info__panels panels">
+
         <div class="panels__item fullinfo-panel" id="fullinfo-panel">
           <ul class="panels__list-plus">
             <li class="panels__elem">Привлекательная архитектура</li>
@@ -99,7 +165,18 @@
             <li class="panels__elem">Не лучшая экология</li>
           </ul>
         </div>
+
+      <div class="panels__item tour-panel" id="tour-panel">
       </div>
+
+      <div class="panels__item layouts-panel" id="layouts-panel">
+      </div>
+
+      <div class="panels__item developer-panel" id="developer-panel">
+      </div>
+
+    </div>
+
     </div>
   </section>
   <section class="form-air">
@@ -126,7 +203,7 @@
       </address>
       <div class="location__map-wrapper">
         <div id="map" class="location__map"></div>
-        <button class="location__btn" type="button" name="button"><span>Объекты инфраструктуры</span></button>
+        <button class="location__btn" type="button" name="button" aria-label="Объекты инфраструктуры"><span>Объекты инфраструктуры</span></button>
         <div class="location__map__list">
           <input class="location__checkbox" type="checkbox" id="school" checked="">
           <label for="school">Школы</label>
@@ -163,10 +240,12 @@
               </picture>
               <span class="offer__price">8 217 030 - 29 070 951₽</span>
               <span class="offer__count">569 квартир в продаже</span>
+              <div class="offer__mark offer__mark--rocket"></div>
+              <div class="offer__mark offer__mark--crown"></div>
             </a>
           </div>
 
-          <p class="offer__name">ЖК «Level Стрешнево» (Левел Стрешнево)</p>
+          <h3 class="offer__name">ЖК «Level Стрешнево» (Левел Стрешнево)</h3>
           <p class="offer__city">Москва, СВАО</p>
           <p class="offer__subway-wrapper">
             <span class="offer__subway">Алексеевская</span>
@@ -188,9 +267,11 @@
               </picture>
               <span class="offer__price">8 217 030 - 29 070 951₽</span>
               <span class="offer__count">569 квартир в продаже</span>
+              <div class="offer__mark offer__mark--discount"></div>
+              <span class="offer__mark-desc">Действует скидка</span>
             </a>
           </div>
-          <p class="offer__name">ЖК «Новое Медведково»</p>
+          <h3 class="offer__name">ЖК «Новое Медведково»</h3>
           <p class="offer__city">Москва, СВАО</p>
           <p class="offer__subway-wrapper">
             <span class="offer__subway">Алексеевская</span>
@@ -214,7 +295,7 @@
               <span class="offer__count">569 квартир в продаже</span>
             </a>
           </div>
-          <p class="offer__name">ЖК «Люберецкий»</p>
+          <h3 class="offer__name">ЖК «Люберецкий»</h3>
           <p class="offer__city">Москва, СВАО</p>
           <p class="offer__subway-wrapper">
             <span class="offer__subway">Алексеевская</span>
@@ -238,7 +319,7 @@
               <span class="offer__count">569 квартир в продаже</span>
             </a>
           </div>
-          <p class="offer__name">ЖК «Измайловский лес»</p>
+          <h3 class="offer__name">ЖК «Измайловский лес»</h3>
           <p class="offer__city">Москва, СВАО</p>
           <p class="offer__subway-wrapper">
             <span class="offer__subway">Алексеевская</span>
@@ -248,8 +329,98 @@
       </ul>
     </div>
   </section>
+  <section class="feedback">
+    <div class="feedback__wrapper">
+      <h2 class="feedback__title">Запишитесь на просмотр и оцените всё сами!</h2>
+      <form action="" class="feedback__form form">
+        <label for="name" class="visually-hidden">Ваше имя</label>
+        <input type="text" id="name" placeholder="Как вас зовут?" required="" disabled="">
+        <div class="form__lists">
+          <label for="dates" class="visually-hidden">Дата</label>
+          <div class="select-wrapper">
+            <select name="dates" id="dates" disabled="">
+              <option value="16.09">16 сентября</option>
+              <option value="17.09">17 сентября</option>
+              <option value="18.09">18 сентября</option>
+              <option value="19.09">19 сентября</option>
+              <option value="20.09">20 сентября</option>
+              <option value="20.09">21 сентября</option>
+             </select>
+          </div>
+           <label for="time" class="visually-hidden">Время</label>
+           <div class="select-wrapper">
+             <select name="dates" id="time" disabled="">
+              <option value="12:00">12:00</option>
+              <option value="14:00">14:00</option>
+              <option value="16:00">16:00</option>
+              <option value="18:00">18:00</option>
+              <option value="18:00">19:00</option>
+            </select>
+          </div>
+        </div>
+        <label for="phone" class="visually-hidden">Ваш телефон</label>
+        <input type="tel" id="phone" placeholder="Ваш телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="" disabled="">
+        <div class="form__check">
+          <input type="checkbox" id="check">
+          <label for="check">Напомните мне за 2 часа до визита</label>
+        </div>
+        <button class="form__btn" type="submit" name="button" disabled="">Отправить</button>
+      </form>
+      <div class="feedback__succes visually-hidden">
+        <svg class="feedback__svg" width="257" height="244" viewBox="0 0 257 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="122" cy="122" r="120" stroke="white" stroke-width="4"></circle>
+        <path d="M60 110.5L114.5 165L255.5 24" stroke="#F0C630" stroke-width="4"></path>
+        </svg>
+        <div class="feedback__text">
+          <h3 class="feedback__succes-text">Вы успешно записались  на просмотр в ЖК Headliner!</h3>
+          <p class="feedback__succes-subtext">Мы ждем вас <span class="date">16 сентября</span> в <span class="time">16:00</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Дополнительная информация</h2>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__item dropdown">
+        <h3>Новостройки</h3>
+        <button class="dropdown__btn btn-open" type="button" aria-label="Свернуть список"></button>
+        <ul class="main-footer__list dropdown__list">
+          <li><a href="#">Квартиры в Москве</a></li>
+          <li><a href="#">Квартиры в Новой Москве</a></li>
+          <li><a href="#">Квартиры в Подмосковье</a></li>
+          <li><a href="#">В Москве</a></li>
+          <li><a href="#">В Подмосковье</a></li>
+          <li><a href="#">В Новой Москве</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__item dropdown">
+        <h3>Популярное</h3>
+        <button class="dropdown__btn" type="button" aria-label="Свернуть список"></button>
+        <ul class="main-footer__list dropdown__list dropdown__list--hidden">
+          <li><a href="#">В рассрочку</a></li>
+          <li><a href="#">Военная ипотека</a></li>
+          <li><a href="#">До 4 млн</a></li>
+          <li><a href="#">До 6 млн</a></li>
+          <li><a href="#">Внутри МКАД</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__item">
+        <h3>Рекламный отдел</h3>
+        <ul class="main-footer__list">
+          <li><a href="tel:+74959874247">+7 (495) 987-42-47 доб. 501</a></li>
+          <li class="main-footer__mail"><a href="mailto:kp@novostroy-m.ru">kp@novostroy-m.ru</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__item">
+        <p>© 2011—2020 Новострой-М
+Всё, что нужно знать о новостройках</p>
+      </div>
+    </div>
+  </footer>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ceb09942-1d20-47e7-a43f-2948b70b9d3d&lang=ru_RU" type="text/javascript"></script>
-  <script src="js/script.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="js/swiper.min.js"></script>
   <script src="js/map.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

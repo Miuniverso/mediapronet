@@ -6,7 +6,7 @@
   column-count: 2;
 }
 
-.panels .fullinfo-panel {
+.fullinfo-panel {
   display: flex;
   padding-top: 13px;
 }
@@ -61,6 +61,10 @@
 
 .panels__list-minus .panels__elem::before {
   background-image: url('../img/minus.svg');
+}
+
+.panels__item {
+  display: none;
 }
 
 @media (max-width: $desktop) {
