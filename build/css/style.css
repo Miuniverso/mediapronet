@@ -1462,18 +1462,18 @@ body {
 .feedback__circle {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash .1s linear forwards;
-          animation: dash .1s linear forwards;
+  -webkit-animation: dash .5s linear forwards;
+          animation: dash .5s linear forwards;
   -webkit-animation-direction: normal;
           animation-direction: normal; }
 
 .feedback__check {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash .1s linear forwards;
-          animation: dash .1s linear forwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+  -webkit-animation: dash .5s linear forwards;
+          animation: dash .5s linear forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
 
 @-webkit-keyframes dash {
   to {

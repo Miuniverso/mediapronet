@@ -41,15 +41,15 @@
 .feedback__circle {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash .1s linear forwards;
+  animation: dash .5s linear forwards;
   animation-direction: normal;
 }
 
 .feedback__check {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash .1s linear forwards;
-  animation-delay: 0.1s;
+  animation: dash .5s linear forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes dash {
