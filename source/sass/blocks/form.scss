@@ -174,8 +174,16 @@
 
   cursor: pointer;
 
+  box-sizing: border-box;
+
   &:disabled {
     opacity: 0.5;
+  }
+
+  &:hover {
+    color: $yellow;
+    border: 1px solid $yellow;
+    padding: 13px 35px;
   }
 }
 

@@ -42,7 +42,7 @@ mapBtn.addEventListener("click", function() {
   document.querySelector(".location__map__list").classList.toggle("location__map__list--open");
 })
 
-// disabled form
+// disabled / submit form
 
 var form = document.querySelector("form");
 var inputs = form.querySelectorAll("input:not([type=checkbox])");
@@ -71,8 +71,9 @@ form.addEventListener("submit", function(e) {
   e.preventDefault();
   title.classList.add("visually-hidden");
   form.classList.add("visually-hidden");
-  succes.classList.remove("visually-hidden");
-  console.log("1");
+  succes.classList.add("feedback__succes--open");
+  document.querySelector(".feedback__date").innerHTML = form.querySelector("select[id=dates]").value;
+  document.querySelector(".feedback__time").innerHTML = form.querySelector("select[id=time]").value;
 })
 
 // accordion
