@@ -359,6 +359,9 @@ body {
   position: relative;
   font-family: "Roboto", "Open Sans", sans-serif; }
 
+.no-scroll {
+  overflow: hidden; }
+
 .container {
   max-width: 1440px;
   margin: 0 auto; }
@@ -376,6 +379,129 @@ body {
   .swiper-container {
     width: 160px;
     height: 232px; } }
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #5F62AC;
+  z-index: 1001;
+  overflow: hidden;
+  -webkit-animation: vanish 2s aase-in-out forwards;
+          animation: vanish 2s aase-in-out forwards; }
+
+.preloader__logo {
+  top: 35%;
+  position: absolute;
+  right: 1%;
+  -webkit-animation: position 2s ease-in-out forwards;
+          animation: position 2s ease-in-out forwards;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.preloader__line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3); }
+  .preloader__line--progress {
+    top: 49.9%;
+    height: 2px;
+    background-color: #F0C630;
+    right: 0;
+    width: 5%;
+    -webkit-animation: progress 2s ease-in-out forwards;
+            animation: progress 2s ease-in-out forwards;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+
+.preloader__count::before {
+  content: "0";
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+  -webkit-animation: counter 2s ease-in-out forwards;
+          animation: counter 2s ease-in-out forwards; }
+
+.loaded .preloader {
+  display: none;
+  -webkit-transition: 2s opacity;
+  transition: 2s opacity;
+  opacity: 1; }
+
+@-webkit-keyframes counter {
+  0% {
+    content: "0"; }
+  20% {
+    content: "20"; }
+  50% {
+    content: "50"; }
+  70% {
+    content: "70"; }
+  100% {
+    content: "100"; } }
+
+@keyframes counter {
+  0% {
+    content: "0"; }
+  20% {
+    content: "20"; }
+  50% {
+    content: "50"; }
+  70% {
+    content: "70"; }
+  100% {
+    content: "100"; } }
+
+@-webkit-keyframes progress {
+  from {
+    width: 5%; }
+  to {
+    width: 100%; } }
+
+@keyframes progress {
+  from {
+    width: 5%; }
+  to {
+    width: 100%; } }
+
+@-webkit-keyframes position {
+  from {
+    right: 1%; }
+  to {
+    right: 100%; } }
+
+@keyframes position {
+  from {
+    right: 1%; }
+  to {
+    right: 100%; } }
+
+@-webkit-keyframes vanish {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 0; } }
+
+@keyframes vanish {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 0; } }
 
 .main-header {
   background-color: #5F62AC;
@@ -1223,6 +1349,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+  white-space: nowrap;
   position: absolute;
   content: "";
   left: 25px;
@@ -1236,6 +1363,22 @@ body {
   padding-top: 3px;
   z-index: 2;
   display: none; }
+
+@-webkit-keyframes move {
+  from {
+    opacity: 0;
+    width: 70px; }
+  to {
+    opacity: 1;
+    width: 170px; } }
+
+@keyframes move {
+  from {
+    opacity: 0;
+    width: 70px; }
+  to {
+    opacity: 1;
+    width: 170px; } }
 
 .offer__mark {
   position: absolute;
@@ -1260,6 +1403,8 @@ body {
     background-color: #FC822A;
     background-image: url("../img/discount.svg"); }
     .offer__mark--discount:hover + .offer__mark-desc {
+      -webkit-animation: move .2s ease-in-out forwards;
+              animation: move .2s ease-in-out forwards;
       display: inline-block;
       vertical-align: top; }
 

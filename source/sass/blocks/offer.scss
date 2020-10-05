@@ -83,6 +83,7 @@
   font-size: 16px;
   line-height: 24px;
   color: $white;
+  white-space: nowrap;
 
   position: absolute;
   content: "";
@@ -90,8 +91,7 @@
   left: 25px;
   top: 8px;
 
-
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba($black, 0.6);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 32px;
@@ -101,6 +101,18 @@
   z-index: 2;
 
   display: none;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    width: 70px;
+  }
+
+  to {
+    opacity: 1;
+    width: 170px;
+  }
 }
 
 .offer__mark {
@@ -135,6 +147,7 @@
     background-image: url("../img/discount.svg");
 
     &:hover + .offer__mark-desc {
+      animation: move .2s ease-in-out forwards;
       display: inline-block;
       vertical-align: top;
     }

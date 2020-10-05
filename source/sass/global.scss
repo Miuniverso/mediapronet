@@ -41,6 +41,10 @@ body {
   font-family: $font-primary;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;

@@ -16,7 +16,16 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="no-scroll">
+
+  <div class="preloader">
+  <svg class="preloader__logo" width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M53.06 18.824h-6.44v4.92l6.44 4.92v-9.84z" fill="#fff"></path><path d="M55.282 44.91c-.658-.542-2.445-2.133-5.547-4.898-4.717-4.203-14.464-12.891-16.22-14.073-.466-.204-.985-.16-1.194-.04-2.74 1.55-20.054 16.856-21.827 18.681L5 40.02c1.175-1.36 19.736-17.937 23.65-20.151 2.433-1.379 5.7-1.41 8.32-.078 1.38.7 5.182 3.943 17.686 15.087 2.553 2.275 4.758 4.24 5.344 4.725l-4.718 5.309z" fill="#F0C630"></path>
+  </svg>
+  <div class="preloader__line"></div>
+  <div class="preloader__line preloader__line--progress"></div>
+  <div class="preloader__count"></div>
+</div>
+
   <header class="main-header">
     <div class="container">
       <nav class="main-nav">
@@ -411,7 +420,6 @@
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ceb09942-1d20-47e7-a43f-2948b70b9d3d&lang=ru_RU"></script>
   <script src="js/plagins/swiper.min.js"></script>
-  <!-- <script src="js/map.min.js"></script> -->
   <script src="js/script.min.js"></script>
 </body>
 
