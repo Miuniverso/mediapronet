@@ -1748,11 +1748,12 @@ body {
 .form select {
   background-color: transparent;
   border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
   outline: none;
   border-bottom: 1px solid #F0C630;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

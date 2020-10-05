@@ -90,6 +90,8 @@
 .form select {
   background-color: transparent;
   border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
   outline: none;
   border-bottom: 1px solid $yellow;
   appearance: none;
