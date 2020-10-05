@@ -1681,6 +1681,7 @@ body {
 
 .form input {
   border: none;
+  border-radius: 0;
   background-color: transparent;
   outline: none;
   border-bottom: 1px solid #F0C630;
