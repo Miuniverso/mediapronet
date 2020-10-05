@@ -388,14 +388,12 @@ body {
   bottom: 0;
   background: #5F62AC;
   z-index: 1001;
-  overflow: hidden;
-  -webkit-animation: vanish 2s aase-in-out forwards;
-          animation: vanish 2s aase-in-out forwards; }
+  overflow: hidden; }
 
 .preloader__logo {
   top: 35%;
   position: absolute;
-  right: 1%;
+  right: 0;
   -webkit-animation: position 2s ease-in-out forwards;
           animation: position 2s ease-in-out forwards;
   -webkit-animation-fill-mode: both;
@@ -412,7 +410,7 @@ body {
     height: 2px;
     background-color: #F0C630;
     right: 0;
-    width: 5%;
+    width: 0;
     -webkit-animation: progress 2s ease-in-out forwards;
             animation: progress 2s ease-in-out forwards;
     -webkit-animation-fill-mode: both;
@@ -434,10 +432,7 @@ body {
           animation: counter 2s ease-in-out forwards; }
 
 .loaded .preloader {
-  display: none;
-  -webkit-transition: 2s opacity;
-  transition: 2s opacity;
-  opacity: 1; }
+  display: none; }
 
 @-webkit-keyframes counter {
   0% {
@@ -465,43 +460,27 @@ body {
 
 @-webkit-keyframes progress {
   from {
-    width: 5%; }
+    width: 3%; }
   to {
     width: 100%; } }
 
 @keyframes progress {
   from {
-    width: 5%; }
+    width: 3%; }
   to {
     width: 100%; } }
 
 @-webkit-keyframes position {
   from {
-    right: 1%; }
+    right: 0; }
   to {
-    right: 100%; } }
+    right: calc(100% - 55px); } }
 
 @keyframes position {
   from {
-    right: 1%; }
+    right: 0; }
   to {
-    right: 100%; } }
-
-@-webkit-keyframes vanish {
-  0% {
-    opacity: 1; }
-  75% {
-    opacity: 0.75; }
-  100% {
-    opacity: 0; } }
-
-@keyframes vanish {
-  0% {
-    opacity: 1; }
-  75% {
-    opacity: 0.75; }
-  100% {
-    opacity: 0; } }
+    right: calc(100% - 55px); } }
 
 .main-header {
   background-color: #5F62AC;
